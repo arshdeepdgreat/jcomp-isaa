@@ -8,12 +8,8 @@ First, we want to embed a text file in a vessel image.
 
 `$ python -m bpcs.bpcs encode -i examples/vessel.png -m examples/message.txt -o examples/encoded.png`
 
-<<<<<<< HEAD
-Now, given the encoded image, we want to recover the message hidden inside it.
-=======
 Now, given the encoded image, we want to recover the message hidden inside it.
 
 `$ python -m bpcs.bpcs decode -i examples/encoded.png -a 0.45 -o examples/message_decoded.txt`
 
 The output, message_decoded.txt, should be the same as message.txt.
->>>>>>> 0ff6d3a07c29961318f7b7c20d06afee4f7f97cd
