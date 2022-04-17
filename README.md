@@ -13,18 +13,3 @@ Now, given the encoded image, we want to recover the message hidden inside it.
 `$ python -m bpcs.bpcs decode -i examples/encoded.png -a 0.45 -o examples/message_decoded.txt`
 
 The output, message_decoded.txt, should be the same as message.txt.
-
-### Run as a module
-
-```python
-import bpcs
-
-alpha = 0.45
-vslfile = '../examples/vessel.png'
-msgfile = '../examples/message.txt' # can be any type of file
-encfile = '../examples/encoded.png'
-msgfile_decoded = 'tmp.txt'
-
-bpcs.encode(vslfile, msgfile, encfile, alpha) # embed msgfile in vslfile, write to encfile
-bpcs.decode(encfile, msgfile_decoded, alpha) # recover message from encfile
-```
